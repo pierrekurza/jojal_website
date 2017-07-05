@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp/tests" isTestSource="true" packagePrefix="Cake" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Autoload/Fixtures/beta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/mobiledetect/mobiledetectlib/namespaced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp/bake/src" isTestSource="false" packagePrefix="Bake" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/justinrainbow/json-schema/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp" isTestSource="false" packagePrefix="Cake" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp/debug_kit/src" isTestSource="false" packagePrefix="DebugKit" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/psy/psysh/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Plugin/Fixtures/plugin-v9" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-highlighter/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/robmorgan/phinx/tests" isTestSource="true" packagePrefix="Test" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp/migrations/src" isTestSource="false" packagePrefix="Migrations" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/nikic/php-parser/test" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/jakub-onderka/php-console-color/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/cakephp/cakephp/src" isTestSource="false" packagePrefix="Cake" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/psr/log" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/seld/jsonlint/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/robmorgan/phinx/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="App" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/composer/composer/tests/Composer/Test/Autoload/Fixtures" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor/psy/psysh/test" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
