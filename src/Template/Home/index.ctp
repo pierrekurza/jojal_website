@@ -1,1 +1,0 @@
-<h1>Bonjour PAGE D'ACCUEIL</h1>

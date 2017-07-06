@@ -9,10 +9,18 @@
 namespace App\Controller;
 
 
+use Cake\Event\Event;
+
 class HomeController extends AppController
 {
     public function isAuthorized()
     {
+        return true;
+    }
+
+    public function index()
+    {
 
     }
+
 }
