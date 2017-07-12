@@ -7,3 +7,9 @@ body {
 main {
     flex: 1 0 auto;
 }
+
+.formulaire {
+    margin: auto;
+    padding: 2% 5%;
+    width: 50%;
+}
