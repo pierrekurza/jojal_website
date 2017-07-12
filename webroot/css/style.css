@@ -8,8 +8,8 @@ main {
     flex: 1 0 auto;
 }
 
-.formulaire {
+.account {
     margin: auto;
-    padding: 2% 5%;
+    padding-top: 10%;
     width: 50%;
 }

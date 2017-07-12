@@ -1,4 +1,4 @@
-<div class="formulaire">
+<div class="account">
     <?= $this->Form->create() ?>
     <label for="login">Login </label>
     <input class="validate" placeholder="Login" type="text" id="login" name="login" autofocus/>

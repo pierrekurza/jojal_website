@@ -21,7 +21,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $this->fetch('title') ?>
+        Jojo Fan Club
     </title>
     <?= $this->Html->meta('icon') ?>
 
@@ -38,7 +38,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <nav class="nav-extended light-blue darken-2">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Logal</a>
+                    <a href="/" class="brand-logo">Logo</a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li><a href="/users/connexion">Se connecter</a></li>
                         <li><a href="/users/inscription">Créer un compte</a></li>
