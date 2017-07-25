@@ -22,8 +22,15 @@ main {
 	position: absolute;
 	padding-top: 0%;
 	right: 20%;
-	top: 35%;
+	top: 33%;
 	background-color: white;
 	border: 5px white solid;
+	/* box-shadow: 0px 0px 3px 1px rgba(0,0,0,.6); */
+}
+.ProfileInfo {
+	background-color: white;
 	box-shadow: 0px 0px 3px 1px rgba(0,0,0,.6);
+	height: 1000px;
+	margin-bottom: 2%;
+	
 }

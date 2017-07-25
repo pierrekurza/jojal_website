@@ -6,4 +6,8 @@
 </div>
 <div class="UserName">
 	<h2>Jon Doe</h2>
+	<p>User@mail.com</p>
+</div>
+<div class="ProfileInfo">
+
 </div>
