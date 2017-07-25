@@ -30,7 +30,7 @@ class UsersController extends AppController
     {
 
     }
-	public function profile()
+	public function profil()
     {
 
     }
