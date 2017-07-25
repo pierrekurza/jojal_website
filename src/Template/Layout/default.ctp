@@ -21,25 +21,45 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Jojo Fan Club
+        <?= $cakeDescription ?>:
+        <?= $this->fetch('title') ?>
     </title>
+
+
     <?= $this->Html->meta('icon') ?>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <?php echo $this->Html->script(['home_template.js', 'materialize.js'], array('inline' => false)); ?>
 
     <?= $this->Html->css('materialize.css') ?>
     <?= $this->Html->css('style.css') ?>
 
+
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
+
+    <script type="application/javascript">
+        $(document).ready(function () {
+            $('.button-collapse').sideNav();
+        });
+    </script>
+
 </head>
 <body>
 
     <header>
-        <nav class="nav-extended light-blue darken-2">
-            <div class="container">
-                <div class="nav-wrapper">
+        <nav class="light-blue darken-2">
+            <div class="nav-wrapper">
+                <div class="container">
                     <a href="/" class="brand-logo">Logo</a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/users/connexion">Se connecter</a></li>
+                        <li><a href="/users/inscription">Créer un compte</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
                         <li><a href="/users/connexion">Se connecter</a></li>
                         <li><a href="/users/inscription">Créer un compte</a></li>
                     </ul>
