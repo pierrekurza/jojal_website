@@ -20,24 +20,48 @@
       	</ul>
     	</div>
     <div id="about" class="col s12">
-					<h3>Pseudo:</h3>
-					<div class="UserHiglight">
-						<p>&nbsp;Joseph Joestar<!--<?= $nom ?>--></p>
-					</div>
-					<h4>Date de naissance:</h4>
-					<div class="UserHiglight">
-						<p>&nbsp;00/00/000<!--<?= $birth ?>--></p>
-					</div>
+			<table class="striped centered">
+	        <thead>
+	          <tr>
+	              <th>Pseudo</th>
+	              <th>Date de naissance</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>Joseph Joestar<!--<?= $nom ?>--></td>
+	            <td>00/00/000<!--<?= $birth ?>--></td>
+	          </tr>
+	        </tbody>
+	      </table>
 		</div>
+
     <div id="contact" class="col s12">
-			<div class="UserInfo">
-				<h3>Mail:</h3>
-				<div class="UserHiglight">
-					<p>&nbsp;jojo@jojo.jojo<!--<?= $mail ?>--></p>
-				</div>
-			</div>
-		</div>
+			<table class="striped centered">
+	        <thead>
+	          <tr>
+	              <th>mail</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>jojo@jojo.jojo<!--<?= $mail ?>--></td>
+	          </tr>
+	        </tbody>
+	      </table>
     <div id="other" class="col s12">
+			<table class="striped centered">
+	        <thead>
+	          <tr>
+	              <th>...</th>
+	          </tr>
+	        </thead>
+	        <tbody>
+	          <tr>
+	            <td>...</td>
+	          </tr>
+	        </tbody>
+	      </table>
 		</div>
   	</div>
 	</div>
