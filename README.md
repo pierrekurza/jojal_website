@@ -17,3 +17,8 @@ bin/cake server
 ```
 
 Se rendre à cette URL -> `http://localhost:8765` pour consulter la page d'accueil.
+
+## Mes activitées
+```bash
+Creation de la page `profil.ctp`
+```
