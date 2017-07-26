@@ -12,6 +12,7 @@ use Cake\ORM\Entity;
  * @property \Cake\I18n\FrozenDate $dateNaissance
  * @property string $lieu
  * @property \Cake\I18n\FrozenTime $dateCreationCompte
+ * @property string $password
  */
 class User extends Entity
 {
@@ -28,5 +29,14 @@ class User extends Entity
     protected $_accessible = [
         '*' => true,
         'id' => false
+    ];
+
+    /**
+     * Fields that are excluded from JSON versions of the entity.
+     *
+     * @var array
+     */
+    protected $_hidden = [
+        'password'
     ];
 }

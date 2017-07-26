@@ -43,6 +43,23 @@ class AppController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'authorize' => 'Controller',
+            'authenticate' => [
+                'Form' => [
+                    'fields' => [
+                        'username' => 'login',
+                        'password' => 'password'
+                    ]
+                ]
+            ],
+            'loginAction' => [
+                'controller' => 'Home',
+                'action' => 'index'
+            ],
+            'unauthorizedRedirect' => $this->referer(),
+            'authError' => "Vous n'êtes pas autorisé à accéder à cette page"
+        ]);
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -64,6 +81,14 @@ class AppController extends Controller
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {
             $this->set('_serialize', true);
+        }
+        $currentUserName = $this->Auth ? $this->Auth->user('login') : null;
+
+        if($currentUserName){
+            $this->set('currentUserName', $currentUserName);
+        }
+        else{
+            $this->set('currentUserName', '');
         }
     }
 }
