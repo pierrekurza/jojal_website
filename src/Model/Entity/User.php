@@ -9,6 +9,9 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $login
  * @property string $mail
+ * @property \Cake\I18n\FrozenDate $dateNaissance
+ * @property string $lieu
+ * @property \Cake\I18n\FrozenTime $dateCreationCompte
  */
 class User extends Entity
 {

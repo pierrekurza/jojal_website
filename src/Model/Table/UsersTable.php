@@ -57,6 +57,18 @@ class UsersTable extends Table
             ->notEmpty('mail')
             ->add('mail', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
+        $validator
+            ->date('dateNaissance')
+            ->allowEmpty('dateNaissance');
+
+        $validator
+            ->allowEmpty('lieu');
+
+        $validator
+            ->dateTime('dateCreationCompte')
+            ->requirePresence('dateCreationCompte', 'create')
+            ->notEmpty('dateCreationCompte');
+
         return $validator;
     }
 
