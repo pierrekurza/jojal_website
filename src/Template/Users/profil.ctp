@@ -1,5 +1,5 @@
-<?php echo $this->Html->script(['Tabs.js'], array('inline' => false)); ?>
-<div class="UserWrapper">
+<?php echo $this->Html->script(['toast.js'], array('inline' => false)); ?>
+<div class="UserWrapper" onload="Materialize.toast('Scrollez pour voir la suite du profil', 8000)">
 	<div class="UserBanner">
 		<?= $this->Html->image('DefaultBanner.png', ['width'=>'1270px','height'=>'350px']); ?>
 	</div>
@@ -14,9 +14,9 @@
 		<div class="row">
     	<div class="col s12">
       	<ul class="tabs tabs-fixed-width tabs">
-        	<li class="tab col s3"><a class="active" href="#about">A propos de moi</a></li>
-        	<li class="tab col s3"><a href="#contact">Me contacter</a></li>
-        	<li class="tab col s3"><a href="#other">Autres</a></li>
+        	<li class="tab col s3"><a class="active" href="#about">A propos</a></li>
+        	<li class="tab col s3"><a href="#contact">contact</a></li>
+        	<li class="tab col s3"><a href="#others">Autres</a></li>
       	</ul>
     	</div>
     <div id="about" class="col s12">
@@ -30,12 +30,11 @@
 	        <tbody>
 	          <tr>
 	            <td>Joseph Joestar<!--<?= $nom ?>--></td>
-	            <td>00/00/000<!--<?= $birth ?>--></td>
+	            <td>00/00/0000<!--<?= $birth ?>--></td>
 	          </tr>
 	        </tbody>
 	      </table>
 		</div>
-
     <div id="contact" class="col s12">
 			<table class="striped centered">
 	        <thead>
@@ -49,20 +48,20 @@
 	          </tr>
 	        </tbody>
 	      </table>
-    <div id="other" class="col s12">
+		</div>
+    <div id="others" class="col s12">
 			<table class="striped centered">
 	        <thead>
 	          <tr>
-	              <th>...</th>
+	              <th>Autres</th>
 	          </tr>
 	        </thead>
 	        <tbody>
 	          <tr>
-	            <td>...</td>
+	            <td>Valeur</td>
 	          </tr>
 	        </tbody>
 	      </table>
 		</div>
-  	</div>
 	</div>
 </div>
