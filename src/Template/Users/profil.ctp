@@ -1,31 +1,44 @@
 <?php echo $this->Html->script(['Tabs.js'], array('inline' => false)); ?>
-
-<div class="UserBanner">
-	<?= $this->Html->image('DefaultBanner.png', ['width'=>'1270px','height'=>'350px']); ?>
-</div>
-<div class="UserPicture">
-	<?= $this->Html->image('DefaultPP.png', ['width'=>'220px','height'=>'219px']); ?>
-</div>
-<div class="UserName">
-	<h2>Joseph Joestar</h2>
-	<p>jojo@jojo.jojo</p>
-</div>
-<div class="ProfileInfo">
-	<div class="row">
-    <div class="col s12">
-      <ul class="tabs">
-        <li class="tab col s3"><a class="active" href="#test1">A propos de moi</a></li>
-        <li class="tab col s3"><a href="#test2">Me contacter</a></li>
-        <li class="tab col s3"><a href="#test3">Autres</a></li>
-      </ul>
-    </div>
-    <div id="test1" class="col s12">Test 1
+<div class="UserWrapper">
+	<div class="UserBanner">
+		<?= $this->Html->image('DefaultBanner.png', ['width'=>'1270px','height'=>'350px']); ?>
 	</div>
-    <div id="test2" class="col s12">Test 2
+	<div class="UserPicture">
+		<?= $this->Html->image('DefaultPP.png', ['width'=>'100%','height'=>'100%']); ?>
 	</div>
-    <div id="test3" class="col s12">Test 3
+	<div class="UserName">
+		<h2>Joseph Joestar<!--: <?= $nom ?>--></h2>
+		<p>&nbsp;jojo@jojo.jojo<!-- <?= $mail ?>--></p>
 	</div>
-  </div>
+	<div class="ProfileInfo">
+		<div class="row">
+    	<div class="col s12">
+      	<ul class="tabs tabs-fixed-width tabs">
+        	<li class="tab col s3"><a class="active" href="#about">A propos de moi</a></li>
+        	<li class="tab col s3"><a href="#contact">Me contacter</a></li>
+        	<li class="tab col s3"><a href="#other">Autres</a></li>
+      	</ul>
+    	</div>
+    <div id="about" class="col s12">
+					<h3>Pseudo:</h3>
+					<div class="UserHiglight">
+						<p>&nbsp;Joseph Joestar<!--<?= $nom ?>--></p>
+					</div>
+					<h4>Date de naissance:</h4>
+					<div class="UserHiglight">
+						<p>&nbsp;00/00/000<!--<?= $birth ?>--></p>
+					</div>
+		</div>
+    <div id="contact" class="col s12">
+			<div class="UserInfo">
+				<h3>Mail:</h3>
+				<div class="UserHiglight">
+					<p>&nbsp;jojo@jojo.jojo<!--<?= $mail ?>--></p>
+				</div>
+			</div>
+		</div>
+    <div id="other" class="col s12">
+		</div>
+  	</div>
+	</div>
 </div>
-
-
