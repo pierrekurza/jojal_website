@@ -30,24 +30,38 @@
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="14" parent="10" name="users_mail_uindex">
+    <column id="14" parent="10" name="dateNaissance">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="15" parent="10" name="lieu">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="16" parent="10" name="dateCreationCompte">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="17" parent="10" name="users_mail_uindex">
       <ColNames>mail</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="15" parent="10" name="users_login_uindex">
+    <index id="18" parent="10" name="users_login_uindex">
       <ColNames>login</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="16" parent="10" name="PRIMARY">
+    <key id="19" parent="10" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="17" parent="10" name="users_login_uindex">
+    <key id="20" parent="10" name="users_login_uindex">
       <ColNames>login</ColNames>
       <UnderlyingIndexName>users_login_uindex</UnderlyingIndexName>
     </key>
-    <key id="18" parent="10" name="users_mail_uindex">
+    <key id="21" parent="10" name="users_mail_uindex">
       <ColNames>mail</ColNames>
       <UnderlyingIndexName>users_mail_uindex</UnderlyingIndexName>
     </key>

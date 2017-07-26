@@ -20,6 +20,9 @@ class UsersFixture extends TestFixture
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
         'login' => ['type' => 'string', 'length' => 25, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'mail' => ['type' => 'string', 'length' => 50, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'dateNaissance' => ['type' => 'date', 'length' => null, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null],
+        'lieu' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'dateCreationCompte' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => 'CURRENT_TIMESTAMP', 'comment' => '', 'precision' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'users_mail_uindex' => ['type' => 'unique', 'columns' => ['mail'], 'length' => []],
@@ -41,7 +44,10 @@ class UsersFixture extends TestFixture
         [
             'id' => 1,
             'login' => 'Lorem ipsum dolor sit a',
-            'mail' => 'Lorem ipsum dolor sit amet'
+            'mail' => 'Lorem ipsum dolor sit amet',
+            'dateNaissance' => '2017-07-26',
+            'lieu' => 'Lorem ipsum dolor sit amet',
+            'dateCreationCompte' => '2017-07-26 09:01:43'
         ],
     ];
 }
