@@ -30,7 +30,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <?php echo $this->Html->script(['home_template.js', 'materialize.js'], array('inline' => false)); ?>
+    <?php echo $this->Html->script(['home_template.js', 'materialize.min.js'], array('inline' => false)); ?>
 
     <?= $this->Html->css('materialize.css') ?>
     <?= $this->Html->css('style.css') ?>
@@ -54,7 +54,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <div class="nav-wrapper">
                 <div class="container">
                     <a href="/" class="brand-logo">Logo</a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="/users/connexion">Se connecter</a></li>
                         <li><a href="/users/inscription">Créer un compte</a></li>

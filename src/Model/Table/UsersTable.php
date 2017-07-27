@@ -69,6 +69,10 @@ class UsersTable extends Table
             ->requirePresence('dateCreationCompte', 'create')
             ->notEmpty('dateCreationCompte');
 
+        $validator
+            ->requirePresence('password', 'create')
+            ->notEmpty('password');
+
         return $validator;
     }
 
