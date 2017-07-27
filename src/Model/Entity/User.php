@@ -13,6 +13,7 @@ use Cake\ORM\Entity;
  * @property string $lieu
  * @property \Cake\I18n\FrozenTime $dateCreationCompte
  * @property string $password
+ * @property string $role
  */
 class User extends Entity
 {

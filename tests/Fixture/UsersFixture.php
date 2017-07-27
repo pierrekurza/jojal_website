@@ -24,6 +24,7 @@ class UsersFixture extends TestFixture
         'lieu' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'dateCreationCompte' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => 'CURRENT_TIMESTAMP', 'comment' => '', 'precision' => null],
         'password' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'role' => ['type' => 'string', 'length' => null, 'null' => true, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'users_mail_uindex' => ['type' => 'unique', 'columns' => ['mail'], 'length' => []],
@@ -46,10 +47,11 @@ class UsersFixture extends TestFixture
             'id' => 1,
             'login' => 'Lorem ipsum dolor sit a',
             'mail' => 'Lorem ipsum dolor sit amet',
-            'dateNaissance' => '2017-07-26',
+            'dateNaissance' => '2017-07-27',
             'lieu' => 'Lorem ipsum dolor sit amet',
-            'dateCreationCompte' => '2017-07-26 12:06:53',
-            'password' => 'Lorem ipsum dolor sit amet'
+            'dateCreationCompte' => '2017-07-27 08:44:43',
+            'password' => 'Lorem ipsum dolor sit amet',
+            'role' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }

@@ -54,8 +54,8 @@ class AppController extends Controller
                 ]
             ],
             'loginAction' => [
-                'controller' => 'Home',
-                'action' => 'index'
+                'controller' => 'Users',
+                'action' => 'login'
             ],
             'unauthorizedRedirect' => $this->referer(),
             'authError' => "Vous n'êtes pas autorisé à accéder à cette page"
