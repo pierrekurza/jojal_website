@@ -21,7 +21,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        <?= $cakeDescription ?>:
         <?= $this->fetch('title') ?>
     </title>
 
@@ -30,7 +29,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-    <?php echo $this->Html->script(['home_template.js', 'materialize.min.js'], array('inline' => false)); ?>
+    <?php echo $this->Html->script(['home_template.js', 'materialize.min.js', 'hideErrorMessage.js'], array('inline' => false)); ?>
 
     <?= $this->Html->css('materialize.css') ?>
     <?= $this->Html->css('style.css') ?>
@@ -56,11 +55,11 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <a href="/" class="brand-logo">Logo</a>
                     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="/users/connexion">Se connecter</a></li>
+                        <li><a href="/users/login">Se connecter</a></li>
                         <li><a href="/users/inscription">Créer un compte</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
-                        <li><a href="/users/connexion">Se connecter</a></li>
+                        <li><a href="/users/login">Se connecter</a></li>
                         <li><a href="/users/inscription">Créer un compte</a></li>
                     </ul>
                 </div>

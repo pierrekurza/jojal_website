@@ -1,26 +1,26 @@
-<?= $this->Html->script(['inscription_form.js', 'inscription_datepicker.js'], array('inline' => false)); ?>
+<?= $this->Html->script(['inscription_form.js', 'inscription_datepicker.js', 'jquery.validate.js'], array('inline' => false)); ?>
 
 <div class="account">
-    <?= $this->Form->create() ?>
+    <form method="post" class="inscriptionValidation" action="/users/creer">
 
-    <label for="login">Login </label>
-    <input class="validate" placeholder="Login" type="text" id="login" name="login" autofocus/>
+        <input class="validate" placeholder="Login" type="text" id="login" name="login" autofocus/>
 
-    <label for="lieu">Où êtes-vous ? </label>
-    <input class="validate" placeholder="Lieu" type="text" id="lieu" name="lieu"/>
+        <br>
+        <input class="validate error" placeholder="Lieu" type="text" id="lieu" name="lieu"/>
 
-    <label for="dateNaissance">Date de naissance </label>
-    <input class="datepicker" placeholder="Date de naissance" type="text" id="dateNaissance" name="dateNaissance"/>
+        <br>
+        <input class="datepickerInscription error" placeholder="Date de naissance" type="date" id="dateNaissance" name="dateNaissance"/>
 
-    <label for="mail">Mail </label>
-    <input class="validate" placeholder="Adresse Mail" type="text" id="mail" name="mail" />
+        <br>
+        <input class="validate error" placeholder="Adresse Mail" type="email" id="mail" name="mail" />
 
-    <label for="password">Mot de passe</label>
-    <input placeholder="Mot de passe" id="password" name="password" type="password" class="validate">
+        <br>
+        <input placeholder="Mot de passe" id="password" name="password" type="password" class="error">
 
-    <label id="lblPasswordConfirm" for="passwordConfirm" data-error="Password not match" data-success="Password Match">Mot de passe (confirmation)</label>
-    <input name="password_confirm" placeholder="Mot de passe (confirmation)" id="passwordConfirm" type="password">
-
-    <?= $this->Form->button('S\'inscrire', array('class' => 'btn btn-default light-blue accent-3')) ?>
-    <?= $this->Form->end() ?>
+        <br>
+        <input name="password_confirm" placeholder="Mot de passe (confirmation)" id="passwordConfirm" type="password" class="error">
+        <br>
+        <br>
+        <button class="btn waves-effect waves-light red" type="submit">S'inscrire</button>
+    </form>
 </div>
