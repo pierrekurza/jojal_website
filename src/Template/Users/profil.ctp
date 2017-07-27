@@ -7,7 +7,7 @@
 		<?= $this->Html->image('DefaultPP.png', ['width'=>'100%','height'=>'100%']); ?>
 	</div>
 	<div class="UserName">
-		<h2>Joseph Joestar<!--: <?= $nom ?>--></h2>
+		<h2><!--<?= $id ?>-->Joseph Joestar</h2>
 		<p>&nbsp;jojo@jojo.jojo<!-- <?= $mail ?>--></p>
 	</div>
 	<div class="ProfileInfo">
@@ -29,8 +29,8 @@
 	        </thead>
 	        <tbody>
 	          <tr>
-	            <td>Joseph Joestar<!--<?= $nom ?>--></td>
-	            <td>00/00/0000<!--<?= $birth ?>--></td>
+	            <td>Joseph Joestar<!--<?= $id ?>--></td>
+	            <td>00/00/0000<!--<?= $dateNaissance ?>--></td>
 	          </tr>
 	        </tbody>
 	      </table>
@@ -53,12 +53,12 @@
 			<table class="striped centered">
 	        <thead>
 	          <tr>
-	              <th>Autres</th>
+	              <th>Lieu</th>
 	          </tr>
 	        </thead>
 	        <tbody>
 	          <tr>
-	            <td>Valeur</td>
+	            <td>lieu<!--<?= $lieu ?>--></td>
 	          </tr>
 	        </tbody>
 	      </table>

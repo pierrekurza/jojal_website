@@ -23,6 +23,7 @@ main {
     margin: auto;
     padding-top: 2%;
     width: 100%;
+    background: center fixed;
 }
 .UserPicture {
 	position: absolute;
